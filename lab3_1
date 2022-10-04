@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> </title>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Lab 3 WEB">
+    <meta name="keywords" content="KPI, WEB, studying">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+    <style>
+        /* контейнер */
+        .container {
+            width: 66.66%;
+            max-width: 800px;
+            padding-right: 15px;
+            padding-left: 15px;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: #118f8f;
+            color: black;
+            font-size: 24px;
+            text-align: center;
+            
+        }
+
+        /* flex-контейнер */
+        .row {
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            margin-right: -15px;
+            margin-left: -15px;
+            height: 300px;
+        }
+
+        .mini-row {
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            margin-right: -15px;
+            margin-left: -15px;
+            height: 150px;
+        }
+
+        /* загальні налаштування для flex-елементів */
+        .col {
+            position: relative;
+            width: 100%;
+            padding-top: 150px;
+        }
+        .mini-col {
+            position: relative;
+            width: 100%;
+            padding-top: 75px;
+        }
+
+        .first-row {
+            height: 450px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            width: 100%;
+            padding-top: 0px;
+        }
+
+        .c1{
+            -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+            max-width: 33.33%;
+            background-color: #95f8b4;
+          
+        }
+        .c2{
+            -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+            max-width: 33.33%;
+            background-color: #75d8f3;
+        }
+
+        .c3{
+            -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+            max-width: 33.33%;
+            background-color: #f7f895;
+        }
+
+        .c4{
+            -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+            max-width: 33.33%;
+            background-color: #f095f8;
+        }
+
+        .c5{
+            -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+            max-width: 33.33%;
+            background-color: #f8e3b1;
+        }
+
+        .con1
+    </style>
+</head>
+<body>
+    <main class="container">
+        <div class="mini-row">
+            <div class="mini-col first-row c1">
+                Text
+            </div>
+            <div class="mini-col c2" style="padding-right: 276.5px;">
+                Text
+            </div>
+        </div>
+        <div class="row" style="justify-content: flex-end;">
+            <div class="col c3">
+                Text
+            </div>
+            <div class="first-row col c4">
+                Text
+            </div>
+        </div>
+        <div class="mini-row">
+            <div class="mini-col c5" style="padding-left: 276px;">
+                Text
+            </div>
+        </div>
+    </main>
+</body>
+</html>
