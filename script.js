@@ -1,7 +1,7 @@
 function manipulateImage(flag){
     let imageToUpdate = document.getElementById("scalableImage");
     if (flag === 1){
-        imageToUpdate.src = "https://kpi.ua/files/images-page/kyiv.jpg";
+        imageToUpdate.src = "https://static.riafan.ru/upload/images/2022/10/10/1020294_full.jpeg";
     } else if (flag === 2){
         imageToUpdate.style.transform = 'scale(1.1)';
         imageToUpdate.style.transition = 'transform 0.25s ease';
