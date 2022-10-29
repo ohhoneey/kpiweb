@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <title> Кабанець В лаб 4 </title>
+      <meta charset="UTF-8" />
+      <meta name="description" content="Lab 4 WEB">
+      <meta name="keywords" content="KPI, WEB, studying">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <link rel="stylesheet" href="style.css">
+      <script src="script.js"></script>
+  </head>
+  <body>
+    <p>
+        <h2>Кабанець Вікторія Вадимівна</h2>
+    </p>
+    <p id="firstDynamicElement" onclick="changeColor()">
+        Народиласа 5 вересня 2002 року в місті Київ
+    </p>
+    <p id="secondDynamicElement" onclick="changeColorWithQuery()">
+        Освіта:
+        <ul>
+            <li>АКЛ НАУ</li>
+            <li>КПІ ім Ігоря Сікорського</li>
+        </ul>
+    </p>
+
+    <h4>Хоббі</h4>
+    <ul>
+        <li>читання</li>
+        <li>музика</li>
+        <li>спорт</li>
+    </ul>
+
+    <h4>Улюблені фільми</h4>
+    <ol>
+        <li>Безмежний розум: Області пітьми</li>
+        <li>1+1</li>
+        <li>Метелик</li>
+    </ol>
+
+    <h4>Улюблені письменники</h4>
+    <ol>
+        <li>Аґата Кристі</li>
+        <li>Ернест Хемінгуей</li>
+        <li>Стівен Кінг</li>
+    </ol>
+
+    <p>
+        Київ – столиця України та одне з найстаріших міст Європи, засноване щонайменше 1500 років тому. Сучасне європейське місто здатне здивувати будь-кого – від любителів природної краси, архітектури та визначних пам'яток до тих, хто віддає перевагу більш насиченому та активному відпочинку.
+    <p>
+        <a href="https://www.44.ua/">
+            <img src="https://s.mind.ua/img/forall/a/202393/3.jpg?1649346407" width="50%" alt="Київ фото">
+        </a>
+        <div>
+            <img id="scalableImage" src="" width="40%" alt="Зображення, що масштабується">
+        </div>
+    <p>
+    <div>
+        <button type="button" name="add_image" onclick="manipulateImage(1)">Додати</button>
+        <button type="button" name="enlarge_image" onclick="manipulateImage(2)">Збільшити</button>
+        <button type="button" name="shrink_image" onclick="manipulateImage(3)">Зменшити</button>
+        <button type="button" name="delete_image" onclick="manipulateImage(4)">Видалити</button>
+    </div>
+  </body>
+</html>
