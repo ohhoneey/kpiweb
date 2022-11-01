@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Comfortaa', sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.box {
+    padding: 20px;
+    width: 500px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: 4px solid black;
+    border-radius: 15px;
+    box-shadow: 10px 15px 20px rgba(0, 0, 0, .4);
+    /* display: none; */
+    /* display: none; */
+}
+
+.first_input {
+    height: 50px;
+    width: 430px;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 20px;
+    padding-left: 20px;
+}
+
+button {
+    margin-bottom: 10px;
+    height: 60px;
+    width: 320px;
+    border-radius: 5px;
+    background: linear-gradient(135deg, #855edd 0%, #63afd3 100%);
+    color: white;
+    font-weight: 700;
+    font-size: 24px;
+    letter-spacing: 2px;
+    transition: 300ms;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #ecc344 0%, #e42d7f 100%);
+    letter-spacing: 1px;
+}
+
+.first_input:valid {
+    border: 3px solid green;
+}
+
+.first_input:invalid {
+    border: 3px solid red;
+}
+
+.message-container {
+    display: none;
+    padding: 20px;   
+}
+
+h2 {
+    display: block;
+    height: 50px;   
+    width: 430px;
+    padding-left: 20px;
+    border: 3px solid black;
+    border-radius: 20px;
+    line-height: 45px;
+}
+
+
+/* ----- Exercise: 2 ----- */
+
+
+p {
+    position: absolute;
+    width: 250px;
+    right: 5px;
+    top: 60px;
+}
+
+p span {
+    font-weight: 900;
+    font-size: 24px;
+}
+
+.map {
+    display: none;
+    /* display: flex; */
+    height: 690px;
+    width: 690px;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+p {
+    display: none;
+}
+
+.map_cell {
+    margin: 5px;
+    height: 100px;
+    width: 100px;
+    border: 7px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: 900;
+    transition: 130ms;
+}
+
+.map_cell:hover {
+    transform: scale(1.02);
+}
+
+.color_block {
+    display: none;
+    /* display: flex; */
+    flex-direction: column;
+    position: absolute;
+    left: 30px;
+    top: 30px;
+}
+
+.color_block button {
+    width: 50%;
+    float: right;
+    margin-top: 5px;
+    margin-left: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+}
+
+.color_block input {
+    height: 300px;
+    width: 300px;
+}
